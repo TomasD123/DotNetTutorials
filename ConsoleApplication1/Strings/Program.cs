@@ -25,15 +25,33 @@ namespace Strings
 
             string name = "Tom";
             string greeting1 = $"Hello {name} !";
-            string greeting2 = $"Hello {name.ToUpper()} !";
-            string greeting3 = $"Hello {name.ToLower()} !";
-            string greeting4 = "Hello " + name + " !";
+            var loud = name.ToUpper();
+            var quiet = name.ToLower();
 
-            Console.WriteLine(name);
+            string number = "";
             Console.WriteLine(greeting1);
-            Console.WriteLine(greeting2);
-            Console.WriteLine(greeting3);
-            Console.WriteLine(greeting4);
+            Console.WriteLine("Please give me a number between 1-6 ");            
+            number = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(number))
+            {
+                Console.WriteLine(greeting1);
+            }
+            else
+            {
+                int num = Int32.Parse(number);
+
+                if (num <= 3)
+                {
+                    Console.WriteLine($"Hello {quiet} !");
+                }
+                else if (num >= 4 && num <= 6)
+                {
+                    Console.WriteLine($"Hello {loud} !");
+                }
+            }
+            
+            
 
             Console.ReadLine();
         }
