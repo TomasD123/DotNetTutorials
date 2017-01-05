@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{DBAEB69A-0068-403C-91B6-F07289138AF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTime", "DateTime\DateTime.csproj", "{7707CA5E-75E5-41A5-B7D3-41A62A486065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimePractice", "DateTime\DateTimePractice.csproj", "{7707CA5E-75E5-41A5-B7D3-41A62A486065}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
