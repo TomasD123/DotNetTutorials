@@ -10,6 +10,8 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
+            var name = "Jack"; 
+            Console.WriteLine($"Hello {name}!");
         }
     }
 }
