@@ -50,9 +50,6 @@ namespace Strings
                     Console.WriteLine($"Hello {loud} !");
                 }
             }
-            
-            
-
             Console.ReadLine();
         }
     }
