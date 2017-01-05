@@ -33,10 +33,12 @@ namespace Strings
             Console.WriteLine("Please give me a number between 1-6 ");            
             number = Console.ReadLine();
 
+            //checking for empty answer
             if (string.IsNullOrEmpty(number))
             {
                 Console.WriteLine(greeting1);
             }
+            //else continue on with the program
             else
             {
                 int num = Int32.Parse(number);
