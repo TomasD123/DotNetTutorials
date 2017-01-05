@@ -12,6 +12,7 @@ namespace ConsoleApplication2
         {
             var name = "Jack"; 
             Console.WriteLine($"Hello {name}!");
+            Console.ReadLine();
         }
     }
 }
