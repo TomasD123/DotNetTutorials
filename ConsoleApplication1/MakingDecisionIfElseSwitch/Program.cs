@@ -32,9 +32,13 @@ namespace MakingDecisionIfElseSwitch
 
             int correctNumber = new Random().Next(4);
 
-            int guessNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine($"{correctNumber}");
 
+            int guessedNumber = int.Parse(Console.ReadLine());
 
+            Console.WriteLine($"this is your guess {guessedNumber}");
+
+            Console.ReadLine();
         }
     }
 }
