@@ -36,7 +36,9 @@ namespace MakingDecisionIfElseSwitch
 
             int guessedNumber = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"this is your guess {guessedNumber}");
+            //get user input
+
+            Console.WriteLine($"this is your guess {guessedNumber}");  
 
             Console.ReadLine();
         }
