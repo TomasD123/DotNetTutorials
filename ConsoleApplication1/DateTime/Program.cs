@@ -67,18 +67,25 @@ namespace DateTimePractice
             {
                 int age = currentYear - year;
                 Console.WriteLine($"You are {age} years old ");
-                if (currentDay == day)
+                //if (currentDay == day)
                 {
                     Console.WriteLine($"Happy Birthday!!");
-                    /*use TimeSpan to represents a time interval (duration of time or elapsed time) that is measured as a positive or negative 
-                      number of days, hours, minutes, seconds, and fractions of a second. Because it represents a general interval without 
-                      reference to a particular start or end point, it cannot be expressed in terms of years and months */
-                    TimeSpan future = new TimeSpan(10000, 0, 0, 0);
-                    /*using Add Method (using TimeSpan) to add the 10k to find out anniversary */
-                    DateTime anniversary = today.Add(future);
-                    Console.WriteLine($"Your 10,000 day Anniversay falls on {anniversary}");
+                    ///*use TimeSpan to represents a time interval (duration of time or elapsed time) that is measured as a positive or negative 
+                    //  number of days, hours, minutes, seconds, and fractions of a second. Because it represents a general interval without 
+                    //  reference to a particular start or end point, it cannot be expressed in terms of years and months */
+                    //TimeSpan future = new TimeSpan(10000, 0, 0, 0);
+                    ///*using Add Method (using TimeSpan) to add the 10k to find out anniversary */
+                    //DateTime anniversary = today.Add(future);
+                    //Console.WriteLine($"Your 10,000 day Anniversay falls on {anniversary}");
                 }
             }
+
+            double durationTillNext = duration.TotalDays;
+            int daysToNextAnniversary = 10000 - (Convert.ToInt32(durationTillNext) % 10000);
+            TimeSpan future2 = new TimeSpan(daysToNextAnniversary, 0, 0, 0);
+            DateTime anniversary2 = DateTime.Today + future2;
+
+            Console.WriteLine("You have {0} till your next 10000 days of life, which falls on {1}", daysToNextAnniversary, anniversary2); 
 
             Console.ReadLine();
         }
