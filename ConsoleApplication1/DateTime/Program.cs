@@ -36,17 +36,42 @@ namespace DateTimePractice
                 //Console.WriteLine($"{nameof(minute)}: {minute}");
                 //Console.WriteLine($"{nameof(second)}: {second}");
 
+            string[] input;
+            int[] dob;
+            int month, day, year;
+            bool validMonth = false;
+            bool validDay = false;
+            bool validYear = false;
 
-            Console.WriteLine("Hello, please give me your date of birth like so '1/1/1980' ");
-            //Split input into array
-            string[] input = (Console.ReadLine().Split('/'));
-            //convert to int to get dob
-            int[] dob = Array.ConvertAll(input, Int32.Parse); 
-            int month = dob[0];
-            int day = dob[1];
-            int year = dob[2];
+            Console.WriteLine("Hello, please give me your date of birth like so 'xx/xx/xxxx' ");
+
+            do
+            {
+                //Split input into array
+                input = (Console.ReadLine().Split('/'));
+
+                if (input[0].Length == 1 || input[0].Length == 2)
+                    validMonth = true;
+                if (input[1].Length == 1 || input[1].Length == 2)
+                    validDay = true;
+                if (input[2].Length == 4)
+                    validYear = true;
+
+                if (validMonth == false || validDay == false || validYear == false)
+                {
+                    Console.WriteLine("Please enter date of birth like so xx/xx/xxxx");
+                }
+
+                //convert to int to get dob
+                dob = Array.ConvertAll(input, Int32.Parse);
+                month = dob[0];
+                day = dob[1];
+                year = dob[2];
+
+            } while (validMonth == false || validDay == false || validYear == false);
 
             //how many days old
+            //this line set up a date
             var someDate = new DateTime(year,month,day);
             TimeSpan duration = DateTime.Today - someDate;
             Console.WriteLine($"You are {duration.TotalDays} days old");
