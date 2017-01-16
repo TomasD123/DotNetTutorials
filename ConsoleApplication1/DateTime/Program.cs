@@ -71,7 +71,6 @@ namespace DateTimePractice
             } while (validMonth == false || validDay == false || validYear == false);
 
             //how many days old
-            //this line set up a date
             var someDate = new DateTime(year,month,day);
             TimeSpan duration = DateTime.Today - someDate;
             Console.WriteLine($"You are {duration.TotalDays} days old");
