@@ -10,7 +10,7 @@ namespace LogicalOperators
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("what is your name?");
+            Console.WriteLine("What name do you go by?");
 
             var name = Console.ReadLine();
 
@@ -20,12 +20,12 @@ namespace LogicalOperators
             int month = currentTime.Month;
             int day = currentTime.Day;
 
-            //set new value for when it is considered morning, evening, night (afternoon is between morning evening)
+            //set new value for when it is considered morning, evening, night (afternoon is between morning-evening)
             var morningTime = new DateTime(year, month, day, 11, 59, 59);
             var eveningTime = new DateTime(year, month, day, 16, 59, 59);
             var nightTime = new DateTime(year, month, day, 20, 0, 0);
 
-            //create logical and check curernt time to expected greeting
+            //create rule to check curernt time to expected greeting
             var morning = (currentTime < morningTime);
             var afternoon = (currentTime > morningTime && currentTime < eveningTime);
             var evening = (currentTime > eveningTime && currentTime < nightTime);
@@ -33,19 +33,19 @@ namespace LogicalOperators
 
             if (morning == true)
             {
-                Console.WriteLine("Good Monring ");
+                Console.WriteLine($"Good Monring {name}!");
             }
             if (afternoon == true)
             {
-                Console.WriteLine("Good Afternoon");
+                Console.WriteLine($"Good Afternoon {name}!");
             }
             if (evening == true)
             {
-                Console.WriteLine("Good Evening");
+                Console.WriteLine($"Good Evening {name}!");
             }
             if (night == true)
             {
-                Console.WriteLine("Good Night");
+                Console.WriteLine($"Good Night {name}!");
             }
 
             Console.ReadLine();
