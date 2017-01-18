@@ -23,13 +23,16 @@ namespace EpressionBasedLoops
                     {
                         Console.Write(candidateFactor);
                         // divide number by the factor you found and assign this back to number
-                         number = number / candidateFactor;
+                        if (candidateFactor >= number)
+                            number = number / candidateFactor;
+                        //if ((candidateFactor * candidateFactor) == number)
+                        //    Console.Write(candidateFactor);
                         // print a comma if number is still greater than 1
                         if (number > 1)
                             Console.Write(", ");
+                        
                     }
                     // don't forget to increment factor!
-                    if (candidateFactor <= number)
                     candidateFactor++;
                 }
             }
