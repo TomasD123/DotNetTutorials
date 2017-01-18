@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicalOperators", "Logical
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpressionBasedLoops", "EpressionBasedLoops\EpressionBasedLoops.csproj", "{BF711CAB-5CBB-405F-97C1-76DD0FB1D800}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loops", "Loops\Loops.csproj", "{C278E95B-1710-4010-8C40-0284826A0592}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BF711CAB-5CBB-405F-97C1-76DD0FB1D800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF711CAB-5CBB-405F-97C1-76DD0FB1D800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF711CAB-5CBB-405F-97C1-76DD0FB1D800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C278E95B-1710-4010-8C40-0284826A0592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C278E95B-1710-4010-8C40-0284826A0592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C278E95B-1710-4010-8C40-0284826A0592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C278E95B-1710-4010-8C40-0284826A0592}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
