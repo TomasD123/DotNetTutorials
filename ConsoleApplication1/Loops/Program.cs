@@ -10,28 +10,18 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            //for (int i = 0; i <= 24; i += 4)
-            //{
-            //    Console.Write($" {i} ");
+            for (int i = 0; i <= 3; i += 1)
+            {
 
-            //    for (int j = 0; j <= 24; j += 3)
-            //    {
-            //        Console.Write($" {j} ");
+                for (int j = 0; j <= 24; j += 1)
+                {
 
-                    for (int k = 0; k <= 2; k += 2)
-                    {
-                        Console.Write($" {k} ");
+                    Console.Write($" {j}, ");
+                    j += i;
+                }
 
-                        for (int l = 0; l <= 24; l += 1)
-                        {
-                            Console.Write($" {l} ");
-                        }
-
-                        Console.WriteLine();
-                    }
-
-            //    }
-            //}
+                Console.WriteLine();
+            }
             Console.ReadLine();
         }
     }
