@@ -15,13 +15,14 @@ namespace Loops
 
                 for (int j = 0; j <= 24; j += 1)
                 {
-
-                    Console.Write($" {j}, ");
+                    string product = Convert.ToString(j);
+                    Console.Write("{0},",  product.PadLeft(4) );
                     j += i;
                 }
 
                 Console.WriteLine();
             }
+
             Console.ReadLine();
         }
     }
