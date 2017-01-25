@@ -16,7 +16,9 @@ namespace Loops
                 for (int j = 0; j <= 24; j += 1)
                 {
                     string product = Convert.ToString(j);
-                    Console.Write("{0},",  product.PadLeft(4) );
+                    Console.Write("{0}",  product.PadLeft(4) );
+                    if (j < 24)
+                        Console.Write(",");
                     j += i;
                 }
 

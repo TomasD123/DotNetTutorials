@@ -49,19 +49,33 @@ namespace MakingDecisionIfElseSwitch
 
             }while (guessedNumber < 1 || guessedNumber > 3);
 
-            
-            if (guessedNumber == randomNumber)
+            while(guessedNumber != randomNumber)
             {
-                Console.WriteLine("You have guessed right");
-            }  
-            if (guessedNumber > randomNumber)
-            {
-                Console.WriteLine("Your guessed number was to high");
-            }  
-            if (guessedNumber < randomNumber)
-            {
-                Console.WriteLine("Your guessed number was to low");
-            } 
+                if (guessedNumber == randomNumber)
+                {
+                    Console.WriteLine("You have guessed right");
+                }
+                if (guessedNumber > randomNumber)
+                {
+                    Console.WriteLine("Your guessed number was to high");
+                }
+                if (guessedNumber < randomNumber)
+                {
+                    Console.WriteLine("Your guessed number was to low");
+                }
+            }
+            //if (guessedNumber == randomNumber)
+            //{
+            //    Console.WriteLine("You have guessed right");
+            //}  
+            //if (guessedNumber > randomNumber)
+            //{
+            //    Console.WriteLine("Your guessed number was to high");
+            //}  
+            //if (guessedNumber < randomNumber)
+            //{
+            //    Console.WriteLine("Your guessed number was to low");
+            //} 
 
             Console.ReadLine();
         }
